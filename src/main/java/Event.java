@@ -18,7 +18,7 @@ public class Event extends Task {
 
     @Override
     public String storeFormat() {
-        return "E|" + completed + "|" + name + "|" + dateTime;
+        return "E| |" + completed + "| |" + name + "| |" + dateTime;
     }
 
     @Override
