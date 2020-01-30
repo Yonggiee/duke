@@ -5,6 +5,7 @@ import java.util.ArrayList;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
+import java.io.File;
 import java.io.IOException;
 import duke.exception.*;
 import duke.task.*;
@@ -13,6 +14,8 @@ public class Storage {
     private Path path;
 
     public Storage(String location){
+        File f = new File("./");
+        System.out.println(f.getAbsolutePath());
         this.path = Paths.get(location, "data", "duke.txt");
     }
 
